@@ -106,11 +106,12 @@ user_feedback_text = st.text_area('Berikan feedback (Opsional):')
 
 # Tombol kirim feedback
 if st.button('Kirim feedback'):
-    # Fungsi simpan feedback
-    save_user_feedback(selected_song, user_feedback_text)
-
-    # Fungsi menampilkan feedback
-    st.write(f"**Feedback anda:** {user_feedback_text}")
+    if not user_feedback_text:
+        st.error('Feedback tidak boleh kosong. Silakan isi feedback Anda.')
+    else:
+        # Fungsi simpan feedback
+        save_user_feedback(selected_song, user_feedback_text)
+        st.success('Feedback berhasil terkirim. Terima kasih atas feedback Anda.')
 
 # Tombol tampilkan riwayat feedback
 if st.button('Tampilkan riwayat feedback'):
