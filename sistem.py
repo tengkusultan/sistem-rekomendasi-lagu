@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 # Proses Data
 df = pd.read_csv('spotify.csv')
-df = df.head(10).drop('link', axis=1).reset_index(drop=True)
+df = df.head(5000).drop('link', axis=1).reset_index(drop=True)
 df['text'] = df['text'].str.lower().replace(r'^\w\s', ' ').replace(r'\n', ' ', regex=True)
 
 stemmer = PorterStemmer()
