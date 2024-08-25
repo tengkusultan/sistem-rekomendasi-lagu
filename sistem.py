@@ -55,7 +55,7 @@ def save_user_feedback(song_id, feedback):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://unsplash.com/photos/shallow-focus-photography-of-condenser-microphone-dKeB0-M9iiA");
+background-image: url("https://images.unsplash.com/photo-1476136236990-838240be4859?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
