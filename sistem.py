@@ -2,7 +2,7 @@ import pickle
 import streamlit as st
 import pandas as pd
 import nltk
-nltk.download('punkt')
+from nltk.tokenize import PunktTokenizer
 from nltk.stem.porter import PorterStemmer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
