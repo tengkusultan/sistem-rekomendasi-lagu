@@ -55,7 +55,7 @@ def save_user_feedback(song_id, feedback):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-image: url("https://img.freepik.com/free-photo/flat-lay-music-background-with-acoustic-guitar_169016-21058.jpg?t=st=1724415689~exp=1724419289~hmac=2d273cea6ae4d4f4adabafcf9f74e7c47df801520e45c2ab8b813a1119ddb936&w=1060");
+background-image: url("https://unsplash.com/photos/shallow-focus-photography-of-condenser-microphone-dKeB0-M9iiA");
 background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
